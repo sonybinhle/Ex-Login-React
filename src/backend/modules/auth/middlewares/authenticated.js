@@ -1,3 +1,5 @@
+'use strict';
+
 var authenticated = function(req, res, next) {
   if (typeof req.session.username !== 'undefined')
     next();

@@ -1,12 +1,14 @@
-var express = require('express');
-var User = require('../models/user.js');
-var userRepository = require('../repositories/userRepository');
+'use strict';
 
-var router = express.Router();
+const express = require('express');
+const User = require('../models/user.js');
+const userRepository = require('../repositories/userRepository');
+
+let router = express.Router();
 
 router.post('/login', function(req, res) {
-  var reqUser = new User(req.body.username, req.body.password);
-  user = userRepository.findUser(reqUser.username);
+  const reqUser = new User(req.body.username, req.body.password);
+  const user = userRepository.findUser(reqUser.username);
 
   if (user === null) {
     return res.status(404).json({ error : { username: 'Username not found'}});

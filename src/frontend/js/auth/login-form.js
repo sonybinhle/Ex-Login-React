@@ -71,6 +71,9 @@
                 <h3 className="panel-title">Login</h3>
               </div>
               <div className="panel-body">
+                <div>
+                  Login example, username and password: "hello123", "Hello123"
+                </div>
 
                 <div className="form-group">
                   <input
@@ -93,7 +96,7 @@
                     type="password"
                     value={this.state.password}
                     onChange={this.onInputPasswordChanged}
-                    placeholder="password"
+                    placeholder="Password"
                   />
                   {
                     this.state.error.password

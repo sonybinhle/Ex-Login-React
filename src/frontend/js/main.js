@@ -1,3 +1,5 @@
+'use strict';
+
 global.$ = require('jquery');
 global.React = require('react');
 global.ReactDOM = require('react-dom');
