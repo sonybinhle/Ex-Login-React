@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/paper/bootstrap.min.css')
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    block body
+      block header
+      block main
+        block sidebar
+        block content
+      block footer
+    block script
+      script(src="/js/bundle.js")
